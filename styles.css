@@ -156,11 +156,15 @@ hr {
 .works li img {
   width: 200px;
   height: 200px;
-  object-fit: contain;
-  transition: transform 0.2s;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
-.works li :hover {
-  transform: scale(1.5);
+.works li img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .contactContainer {
@@ -290,46 +294,37 @@ footer {
   }
 }
 .logo {
-  width: 80px;    /* صغّر الحجم هنا */
-  height: auto;   /* باش الصورة ما تتشوّهش */
+  width: 80px; 
+  height: auto; 
 }
 .aboutMe p {
-  color: #e30404; /* اللون اللي تحب */
+  color: #e30404;
 }
 .aboutMeImg {
-  width: 300px;   /* بدل القيمة حسب الحجم اللي يعجبك */
-  height: auto;   /* يخلي النسبة متوازنة */
+  width: 300px;  
+  height: auto; 
 }
 
 .heroImg {
-  width: 100%; /* هذي هي لي تتحكم في الحجم */
-  max-width: 600px; /* قللها باش تصغر الصورة */
-  height: auto; /* باش تبقى النسبة صحيحة */
-}
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
 
 
-.works li {
-  background-color: transparent;
-  backdrop-filter: none;
-}
 .works li img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   transition: transform 0.2s;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* يخلي الصورة تبان طالع */
-}
-.works li img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
   border-radius: 12px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
-
-.works li img:hover {
-  transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+}
+.works li {
+  border-radius: 16px;
+  background-color: rgba(57, 62, 70, 0.2);
+  backdrop-filter: blur(1px);
+  padding: 1rem 4rem;
 }
