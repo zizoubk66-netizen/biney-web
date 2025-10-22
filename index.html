@@ -6,8 +6,14 @@
     <link rel="stylesheet" href="styles.css" />
     <title>biney</title>
   </head>
+
   <body>
-    <div class="container"></div>
+    <!-- 🎬 الفيديو الخلفي العام -->
+    <video autoplay muted loop id="bgVideo">
+      <source src="assets/video/bg.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+
     <header>
       <img src="assets/svg/logo.svg" alt="MusaabK99 logo" class="logo" />
       <nav class="navigation">
@@ -18,45 +24,49 @@
         </ul>
       </nav>
     </header>
+
     <hr />
 
+    <!-- 🎥 HERO SECTION -->
     <section class="hero">
-      <img class="arrow" src="assets/svg/arrow.svg" alt="arrow" />
+      <video autoplay muted loop playsinline id="heroVideo">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+
       <div class="heroSub">
-        <h1 class="name">I'm brain moser</h1>
-        <h1 class="title"> the ice truck killer💐</h1>
+        <h1 id="title">I'm Brian Moser,<br>the ice truck killer 💐</h1>
+
         <div class="heroBtns">
           <a class="hireMe" href="#contactMe">Hire me</a>
-          <a class="cv" href="https://www.tiktok.com/@zakii_bk2" download
-            >click here 
-            <img src="assets/svg/download.svg" alt="tiktok link"
-          /></a>
+          <a class="cv" href="https://www.tiktok.com/@zakii_bk2" download>
+            click here
+            <img src="assets/svg/download.svg" alt="tiktok link" />
+          </a>
         </div>
       </div>
-      <img src="assets/svg/Hero.svg" alt="hero image" class="heroImg" />
+
+      <img class="arrow" src="assets/svg/arrow.svg" alt="arrow" />
     </section>
 
+    <!-- 🧠 ABOUT ME -->
     <section class="aboutMe" id="aboutMe">
-      <img
-        src="assets/svg/AboutMe.svg"
-        alt="aboutMe image"
-        class="aboutMeImg"
-      />
+      <img src="assets/imgs/aboutme.png" alt="about me image" class="aboutMeImg" />
       <div class="textContainer">
         <div class="textTitle">
           <h1 class="aboutName">About</h1>
           <h1 class="aboutTitle">me</h1>
-          <img src="assets/svg/lightbulb.svg" alt="ligh" class="light" />
+        
         </div>
         <p class="aboutMePar">
           Hey, I’m <strong>Brian Moser</strong>, a mind shaped by logic and precision.  
-  I see patterns where others see chaos — in data, in design, and in people.  
-  Driven by curiosity and control, I turn complex ideas into clean, efficient creations.  
-  Calm on the surface, focused underneath — every detail matters
+          I see patterns where others see chaos — in data, in design, and in people.  
+          Driven by curiosity and control, I turn complex ideas into clean, efficient creations.  
+          Calm on the surface, focused underneath — every detail matters.
         </p>
       </div>
     </section>
 
+    <!-- 💼 WORKS -->
     <section class="works" id="MyWorks">
       <div class="worksContainer">
         <div class="projectTitle">
@@ -64,21 +74,14 @@
           <h1 class="aboutTitle">works</h1>
         </div>
         <ul>
-          <li>
-            <a href=""
-              ><img src="assets/imgs/landingPage.png" alt="landing Page"
-            /></a>
-          </li>
-          <li>
-            <a href=""><img src="assets/imgs/webApp.png" alt="Wep App" /></a>
-          </li>
-          <li>
-            <a href=""><img src="assets/imgs/app.png" alt="App" /></a>
-          </li>
+          <li><a href=""><img src="assets/imgs/landingPage.png" alt="landing Page" /></a></li>
+          <li><a href=""><img src="assets/imgs/webApp.png" alt="Web App" /></a></li>
+          <li><a href=""><img src="assets/imgs/app.png" alt="App" /></a></li>
         </ul>
       </div>
     </section>
 
+    <!-- 📞 CONTACT -->
     <section class="contactContainer" id="contactMe">
       <div class="contactTitle">
         <h1 class="aboutName">Contact</h1>
@@ -87,9 +90,7 @@
       <div class="contact">
         <div class="emailAndPhone">
           <img src="assets/svg/Email.svg" alt="email logo" />
-          <a href="mailto:brainmoser@gmail.com"
-            ><h3>brainmoser@gmail.com</h3></a
-          >
+          <a href="mailto:brainmoser@gmail.com"><h3>brainmoser@gmail.com</h3></a>
         </div>
         <div class="emailAndPhone">
           <img src="assets/svg/phone.svg" alt="phone logo" />
@@ -97,28 +98,13 @@
         </div>
       </div>
       <div class="socialMedia">
-  <!-- GitHub -->
-  <a href="https://github.com/zizoubk66-netizen" target="_blank">
-    <img src="assets/svg/github.svg" alt="My GitHub account" />
-  </a>
-
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/@zakii_bk2" target="_blank">
-    <img src="assets/svg/youtube.svg" alt="My YouTube channel" />
-  </a>
-
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/zakii_bk19/" target="_blank">
-    <img src="assets/svg/instagram.svg" alt="My Instagram account" />
-  </a>
-
-  <!-- TikTok -->
-  <a href="https://www.tiktok.com/@zakii_bk2" target="_blank">
-    <img src="assets/svg/tiktok.svg" alt="My TikTok account" />
-  </a>
-</div>
-
+        <a href="https://github.com/zizoubk66-netizen" target="_blank"><img src="assets/svg/github.svg" alt="GitHub" /></a>
+        <a href="https://www.youtube.com/@zakii_bk2" target="_blank"><img src="assets/svg/youtube.svg" alt="YouTube" /></a>
+        <a href="https://www.instagram.com/zakii_bk19/" target="_blank"><img src="assets/svg/instagram.svg" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@zakii_bk2" target="_blank"><img src="assets/svg/tiktok.svg" alt="TikTok" /></a>
+      </div>
     </section>
+
     <hr />
     <footer>
       <p>Built by zack.</p>
